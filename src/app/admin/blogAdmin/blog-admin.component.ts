@@ -7,7 +7,7 @@ import {Blog } from '../adminShared/blog';
 
 @Component({
     templateUrl: './blog-admin.component.html',
-    styleUrls: [ './blog-admin.components.css']
+    styleUrls: [ './blog-admin.component.css']
 })
 
 export class BlogAdminComponent implements OnInit{
