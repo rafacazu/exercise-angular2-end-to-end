@@ -2,3 +2,13 @@
 <div class="row expanded">
     <img class="hero" src="../shared/images/monitor.jpg" alt="">
 </div>
+
+<div class="row spacing">
+    <div class="card text-center card-spacing">
+        <img class="display-image" [src]="posts.img" alt="">
+        <div class="card-section">
+            <h4 class="list-title" (click)="choosePost(posts)">{{post.title}}</h4>
+            <p>{{posts.content | truncate:140}}</p>
+        </div>
+    </div>
+</div>
