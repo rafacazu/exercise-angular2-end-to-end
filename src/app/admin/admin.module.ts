@@ -16,6 +16,8 @@ import {BlogAddComponent} from './blogAdd/blog-add.component';
 
 import {TruncatePipe} from './adminShared/trunc.pipe';
 
+import {ProductAdminService} from './adminShared/product-admin.service';
+
 const AdminRoutes: Routes = [
     {
         path: 'admin',
@@ -49,9 +51,8 @@ const AdminRoutes: Routes = [
     ],
     providers:[
         UserService,
-        BlogAdminService
-
-
+        BlogAdminService,
+        ProductAdminService
     ]
 })
 

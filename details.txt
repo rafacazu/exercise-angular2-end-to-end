@@ -1,0 +1,32 @@
+*****Firebase
+
+ - Create New Project
+ - Project Settings
+ - Add Firebase to web app
+ 	- Copy and paste the script tag
+	- initiated on user.service.ts -> constructor
+
+ - Auth
+	- user.service.ts
+	- login()
+	- signup()
+
+ - Adding posts
+	- import firebase in blog-admin.service.ts
+	- createPost() editPost() removePost() methods
+	- import BlogAdminService in blog-add.component.ts
+	- createPost() method
+
+ - Listing posts
+	- import UserService in home.component.ts
+	- create getPosts() method
+
+
+ *NOTES
+	- import and export JSON
+
+ *LINKS
+	Cost increased -> https://startupsventurecapital.com/firebase-costs-increased-by-7-000-81dc0a27271d
+	History -> https://hackernoon.com/how-to-build-a-product-loved-by-millions-and-get-acquired-by-google-the-firebase-story-82dab4e3e80c
+	Tools of the trade (Ionic framework)  -> http://ionicframework.com/survey/2017#tools
+	
