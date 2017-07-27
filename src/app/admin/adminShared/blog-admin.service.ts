@@ -27,7 +27,7 @@ export class BlogAdminService {
     }
 
     editPost(update: Blog){
-        let dbRef = firebase.database().ref('blogPosts/').child(update.id)
+        let dbRef = firebase.database().ref('blogPost/').child(update.id)
             .update({
                 title: update.title,
                 content: update.content
@@ -36,7 +36,7 @@ export class BlogAdminService {
     }
 
     removePost(deletePost: Blog){
-         let dbRef = firebase.database().ref('blogPosts/').child(deletePost.id).remove();
+         let dbRef = firebase.database().ref('blogPost/').child(deletePost.id).remove();
          alert('post deleted');
          let imageRef = firebase.storage().ref().child(`images/${deletePost.imgTitle}`).delete()
          .then(function(){
