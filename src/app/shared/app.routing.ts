@@ -6,10 +6,12 @@ import {ErrorComponent} from '../error/error.component';
 import {FilterComponent} from '../filter/filter.component';
 import {MessageComponent} from '../message/message.component';
 import {BlogDetailComponent} from '../blogDetail/blog-detail.component';
+import { ShopComponent } from '../shop/shop.component';
 
 @NgModule({
     imports:[
         RouterModule.forRoot([
+            {path: 'shop', component: ShopComponent},
             {path: 'post/:id', component: BlogDetailComponent},
             {path: '', component: HomeComponent},
             {path: 'news', component: FilterComponent},
