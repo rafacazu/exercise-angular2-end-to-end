@@ -7,10 +7,12 @@ import {FilterComponent} from '../filter/filter.component';
 import {MessageComponent} from '../message/message.component';
 import {BlogDetailComponent} from '../blogDetail/blog-detail.component';
 import { ShopComponent } from '../shop/shop.component';
+import {ProductDetailComponent} from '../productDetail/product-detail.component';
 
 @NgModule({
     imports:[
         RouterModule.forRoot([
+            {path: 'product/:id', component: ProductDetailComponent},
             {path: 'shop', component: ShopComponent},
             {path: 'post/:id', component: BlogDetailComponent},
             {path: '', component: HomeComponent},
@@ -23,7 +25,8 @@ import { ShopComponent } from '../shop/shop.component';
         RouterModule
     ],
     declarations: [
-        BlogDetailComponent
+        BlogDetailComponent,
+        ProductDetailComponent
     ]
 })
 export class AppRoutingModule{}
