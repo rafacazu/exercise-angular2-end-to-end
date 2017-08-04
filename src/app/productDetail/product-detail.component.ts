@@ -9,7 +9,7 @@ import { Product } from '../admin/adminShared/product';
 })
 
 export class ProductDetailComponent implements OnInit{
-    singlePost: Product;
+    singleProduct: Product;
     constructor(private route: ActivatedRoute, private router: Router){}
     ngOnInit(){
         let productId = this.route.snapshot.params['id'];
@@ -31,7 +31,7 @@ export class ProductDetailComponent implements OnInit{
                 let img = transform[0].img;
                 let price = transform[0].price;
                 let id = transform[0].id;
-                this.singlePost = new Product(name,desc, imgTitle,  img, price, id);
+                this.singleProduct = new Product(name,desc, imgTitle,  img, price, id);
             });
     }
 }
