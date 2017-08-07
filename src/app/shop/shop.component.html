@@ -15,9 +15,9 @@
     <div class="card text-center card-spacing">
       <img class="display-image"  [src]="singleprod.img">
       <div class="card-section">
-        <h4 class="list-title" (click)="chooseProduct(singleprod)">{{singleprod.title}}</h4>
+        <h4 class="list-title" (click)="chooseProduct(singleprod)">{{singleprod.name}}</h4>
         <p>$ {{singleprod.price}}</p>
-        <p>{{singleprod.content | truncate:140}}</p>
+        <p>{{singleprod.desc | truncate:140}}</p>
       </div>
     </div>
 

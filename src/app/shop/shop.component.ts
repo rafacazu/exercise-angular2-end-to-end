@@ -25,7 +25,7 @@ export class ShopComponent implements OnInit{
             });
     }
 
-    choosePost(prod:Product){
+    chooseProduct(prod:Product){
         this.router.navigate(['/product', prod.id]);
     }
 }
